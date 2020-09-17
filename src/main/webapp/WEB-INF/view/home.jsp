@@ -16,9 +16,9 @@
 	<table>
 		<c:forEach items="${pizzas}" var="pizza">
 	    	<tr>
-	    		<td><img src="${pizza[0]}" ></td>
-	    		<td>${pizza[1]}</td>
-	    		<td>${pizza[2]}</td>
+	    		<td><img src="${pizza.imageURL}" ></td>
+	    		<td>${pizza.name}</td>
+	    		<td>$${pizza.price}</td>
 	    	</tr>
 		</c:forEach>
 	</table>
